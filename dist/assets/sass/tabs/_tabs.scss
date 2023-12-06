@@ -1,0 +1,17 @@
+.tab {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/* Стили для кнопок вкладок */
+.tab-button {
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 0;
+  border: none;
+  background-color: #f0f0f0;
+  display: inline-block;
+}

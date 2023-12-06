@@ -1,0 +1,152 @@
+.promo {
+    position: relative;;
+    width: 100vw;
+    height: 100vh;
+    &_title {
+        font-size: 64px;
+        padding-top: 150px;
+        color: rgb(255, 215, 0);
+        font-family:'Dancing Script', cursive;
+    }
+
+    .welcome {
+        font-size: 48px;
+    	font-family: 'Montserrat Alternates', sans-serif;
+        position: absolute;
+        top: 400px;
+        right: 0px;    }
+    .header {
+        display: block;
+        width: 100%;
+        height: 70px;
+        background-color: #000;
+        &_logo {
+            display: block;
+            font-size: 42px;
+            color: rgb(255, 215, 0);
+        }
+        &_contact > a {
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        &_block {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0;
+            margin: 0;
+            justify-content: space-between;
+            &-menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    z-index: 10;
+                    padding: 10px 10px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
+                a {
+                    color: #fff;
+                    font-size: 16px;
+                    text-decoration: none;
+                    position: relative;
+                    display: inline-block;
+                    font-family: 'Roboto', sans-serif;
+                }
+            }
+        }
+    .dropdown {
+        position: relative;
+        cursor: pointer;
+        padding-left: 20px;
+        height: 70px;
+        & > a {
+        font-size: 20px;
+        display: flex;
+        align-items:center;
+        gap: 2px;
+        height: 72px;
+        text-decoration: none;
+        }
+        &:hover .menu {
+            opacity: 1;
+            visibility: visible;
+            transition: 1.5ms;
+        }
+        & > a > img {
+            width: 20px;
+            height: 100%;
+        }
+    }
+    
+    .menu {
+        position: absolute;
+        top: 53px;
+        left: -81px;
+        display: grid;
+        width: 180px;
+        padding: 8px 0;
+        background: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #e1e1e1;
+        box-shadow: 0 40px 40px rgb(0 0 0 / 6%);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.25s;
+        }
+    }
+    
+    .menu > a {
+        font-family:Arial, Helvetica, sans-serif;
+        padding: 12px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #000;
+        z-index: 100;
+        background-color: #fff;
+        &:hover {
+            color: #79beff;
+        }
+    }
+    }
+    .slideshow-container {
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        margin: auto;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+    .welcome {
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        font-size: 72px;
+        color: #fff;
+    }
+    
+    img {
+        width: 100%;
+        height: calc(100vh - 70px);
+        margin: 0;
+        padding: 0;
+        z-index: -100;
+    }
+    
+    @keyframes fade {
+        from { opacity: .4 }
+        to { opacity: 1 }
+    }
+    
+    .fade {
+        animation: fade 1.5s ease-in-out;
+    }
+
+
+
